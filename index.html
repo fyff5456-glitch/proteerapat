@@ -3,6 +3,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แนะนำตัวเอง</title>
 
     <style>
@@ -11,12 +12,14 @@
             background: linear-gradient(135deg, #0f172a, #1e3a8a);
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 50px 15px;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
 
         .profile {
             background: #1e293b;
-            width: 350px;
+            max-width: 350px;
             margin: auto;
             padding: 30px;
             border-radius: 20px;
@@ -28,22 +31,31 @@
             font-size: 30px;
         }
 
+        .line {
+            width: 80px;
+            height: 4px;
+            background: #38bdf8;
+            margin: 15px auto 25px;
+            border-radius: 10px;
+        }
+
         p {
             background: #334155;
             padding: 12px;
             border-radius: 10px;
             margin: 12px 0;
+            transition: 0.3s;
         }
 
         p:hover {
             background: #0284c7;
             transform: scale(1.05);
-            transition: 0.3s;
         }
 
         .footer {
             color: #94a3b8;
-            margin-top: 20px;
+            margin-top: 25px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -53,6 +65,7 @@
     <div class="profile">
 
         <h1>ประวัติส่วนตัว</h1>
+        <div class="line"></div>
 
         <p>👤 ชื่อ : ธีรภัทร์</p>
         <p>🎂 อายุ : 16 ปี</p>
@@ -61,7 +74,7 @@
         <p>🚀 ความฝัน : เป็นโปรแกรมเมอร์</p>
 
         <div class="footer">
-            <p>Welcome to my profile!</p>
+            Welcome to my profile!
         </div>
 
     </div>
